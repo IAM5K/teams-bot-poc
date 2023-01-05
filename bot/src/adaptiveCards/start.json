@@ -1,0 +1,42 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+      {
+          "type": "TextBlock",
+          "text": "Welcome to Tweelin",
+          "wrap": true,
+          "weight": "Bolder"
+      },
+      {
+          "type": "RichTextBlock",
+          "inlines": [
+              {
+                  "type": "TextRun",
+                  "text": "Tweelins aims to provide you hasle free creation and management of appointment with desired persion via Microsoft Teams. This is sample text and can be changed. \nTo know more about us please visit our website and to see the detailed docuementation for usage and contribution, consider visiting to our Documentation page."
+              }
+          ]
+      },
+      {
+          "type": "ActionSet",
+          "actions": [
+              {
+                  "type": "Action.OpenUrl",
+                  "url": "google.com",
+                  "title": "Visit Our Website"
+              }
+          ]
+      },
+      {
+          "type": "ActionSet",
+          "actions": [
+              {
+                  "type": "Action.OpenUrl",
+                  "url": "github.com",
+                  "title": "Open Documentation"
+              }
+          ]
+      }
+  ]
+}

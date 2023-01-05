@@ -1,0 +1,52 @@
+{
+    "solution": {
+        "teamsAppTenantId": "aee06bed-094a-41ad-b3db-500f53180251",
+        "subscriptionId": "7041a14b-2ed1-4ad4-b286-9ea1eae33c3a",
+        "subscriptionName": "Pay-As-You-Go",
+        "tenantId": "aee06bed-094a-41ad-b3db-500f53180251",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "OsmosysIndia",
+        "location": "southindia",
+        "resourceNameSuffix": "7d0624",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "aee06bed-094a-41ad-b3db-500f53180251",
+        "teamsAppId": "3c193a9c-c6c6-4127-af53-768ac2637701"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "18f90793-d394-4205-b2a7-34a832ba55ca",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "693bd01b-db05-4c5c-9764-030010af912d",
+        "oauth2PermissionScopeId": "50afdc34-744e-4462-abfd-2f59fefecf22",
+        "tenantId": "aee06bed-094a-41ad-b3db-500f53180251",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/aee06bed-094a-41ad-b3db-500f53180251",
+        "applicationIdUris": "api://osmosysinddev2f7abftab.z30.web.core.windows.net/botid-a5c1538a-fb4d-4ba2-bfae-08bd28b7e6ae",
+        "botId": "a5c1538a-fb4d-4ba2-bfae-08bd28b7e6ae",
+        "botEndpoint": "https://osmosysinddev2f7abfbot.azurewebsites.net",
+        "frontendEndpoint": "https://osmosysinddev2f7abftab.z30.web.core.windows.net"
+    },
+    "fx-resource-frontend-hosting": {
+        "indexPath": "/index.html#",
+        "domain": "osmosysinddev2f7abftab.z30.web.core.windows.net",
+        "endpoint": "https://osmosysinddev2f7abftab.z30.web.core.windows.net",
+        "storageResourceId": "/subscriptions/7041a14b-2ed1-4ad4-b286-9ea1eae33c3a/resourceGroups/OsmosysIndia/providers/Microsoft.Storage/storageAccounts/osmosysinddev2f7abftab"
+    },
+    "fx-resource-bot": {
+        "botId": "a5c1538a-fb4d-4ba2-bfae-08bd28b7e6ae",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "objectId": "71c74f6c-da49-4482-9772-d0ba365bac68",
+        "skuName": "B1",
+        "siteName": "osmosysinddev2f7abfbot",
+        "validDomain": "osmosysinddev2f7abfbot.azurewebsites.net",
+        "appServicePlanName": "osmosysinddev2f7abfbot",
+        "resourceId": "/subscriptions/7041a14b-2ed1-4ad4-b286-9ea1eae33c3a/resourceGroups/OsmosysIndia/providers/Microsoft.Web/sites/osmosysinddev2f7abfbot",
+        "siteEndpoint": "https://osmosysinddev2f7abfbot.azurewebsites.net"
+    },
+    "fx-resource-identity": {
+        "identityName": "osmosysinddev2f7abf",
+        "identityResourceId": "/subscriptions/7041a14b-2ed1-4ad4-b286-9ea1eae33c3a/resourceGroups/OsmosysIndia/providers/Microsoft.ManagedIdentity/userAssignedIdentities/osmosysinddev2f7abf",
+        "identityClientId": "e0fef9b9-d5cf-448b-805a-88700a33cb85"
+    }
+}

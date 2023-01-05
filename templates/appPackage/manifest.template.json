@@ -1,0 +1,99 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.14",
+    "version": "1.0.0",
+    "id": "{{state.fx-resource-appstudio.teamsAppId}}",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/termofuse",
+        "termsOfUseUrl": "https://www.example.com/privacy"
+    },
+    "icons": {
+        "color": "{{config.manifest.icons.color}}",
+        "outline": "{{config.manifest.icons.outline}}"
+    },
+    "name": {
+        "short": "{{config.manifest.appName.short}}",
+        "full": "{{config.manifest.appName.full}}"
+    },
+    "description": {
+        "short": "{{config.manifest.description.short}}",
+        "full": "{{config.manifest.description.full}}"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "{{state.fx-resource-bot.botId}}",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "helloWorld",
+                            "description": "A helloworld command to send a welcome message"
+                        },
+                        {
+                            "title": "start",
+                            "description": "Starts a conversation with bot"
+                        },
+                        {
+                            "title": "wish",
+                            "description": "Creates awish to connect with <username> "
+                        },
+                        {
+                            "title": "showall",
+                            "description": "Display all active conversation schedules."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [
+        {
+            "entityId": "index0",
+            "name": "Wishes",
+            "contentUrl": "{{state.fx-resource-frontend-hosting.endpoint}}{{state.fx-resource-frontend-hosting.indexPath}}/tab",
+            "websiteUrl": "{{state.fx-resource-frontend-hosting.endpoint}}{{state.fx-resource-frontend-hosting.indexPath}}/tab",
+            "scopes": [
+                "personal"
+            ]
+        } ,
+        {
+            "entityId": "index1",
+            "name": "Calender",
+            "contentUrl": "{{state.fx-resource-frontend-hosting.endpoint}}{{state.fx-resource-frontend-hosting.indexPath}}/tab",
+            "websiteUrl": "{{state.fx-resource-frontend-hosting.endpoint}}{{state.fx-resource-frontend-hosting.indexPath}}/tab",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{state.fx-resource-bot.validDomain}}",
+        "{{state.fx-resource-frontend-hosting.domain}}"
+    ],
+    "webApplicationInfo": {
+        "id": "{{state.fx-resource-aad-app-for-teams.clientId}}",
+        "resource": "{{state.fx-resource-aad-app-for-teams.applicationIdUris}}"
+    }
+}
